@@ -14,8 +14,17 @@ body{
 header{
     background-color: #373b69;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem; 
+}
+
+.term{
+    font-size: 2em;
+}
+.term span {
+    color: #7578c5;
+    text-transform: capitalize;
 }
 
 .search{
@@ -76,9 +85,7 @@ main{
     font-weight: bold;
 }
 
-.green {
-    color: rgba(39,182, 39);
-}
+
 .movie:hover .overview{
     transform: translateY(0);
 
@@ -98,6 +105,7 @@ main{
 .overview::-webkit-scrollbar{
     display: none;
 }
+
 
 @media(max-width:700px){
     .movie{
